@@ -1,0 +1,15 @@
+{
+  "name": "hello-swc-node",
+  "scripts": {
+    "start": "nodemon ./lib/index",
+    "dev": "swc src --out-dir lib -w --delete-dir-on-start --copy-files & npm run start",
+    "build": "swc src --out-dir lib --delete-dir-on-start"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.141",
+    "chokidar": "^3.5.3",
+    "nodemon": "^2.0.15"
+  },
+  "type": "commonjs"
+}
